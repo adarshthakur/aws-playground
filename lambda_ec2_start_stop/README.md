@@ -1,0 +1,3 @@
+# This folder contains two Lambda function export zip : ec2-start-dev and ec2-stop-dev. The functions will start the EC2 instances when they recevie an scheduled event from the Event bridge with below JSON payload :
+# {"environment" : "Dev"}
+# In the above JSON payload , the feild 'envrionment' is the tag Key name and its value 'Dev' is the tag value. The Lambda function will start or stop only EC2 # instances that have the envrionmnet tag value as 'Dev'
